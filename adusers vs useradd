@@ -7,3 +7,5 @@ adduser - по сути скрипт на perl который используе
 для того что бы сделать тоже самое с помощью useradd: useradd -d /home/username -m -s/bin/bash -c FullName,Phone,OtherInfo username && passwd username
 
 для добавления пользователя в группу sudo: usermod -a -G sudo username
+-G - дополнительные группы для пользователя;
+-a - добавить пользователя в дополнительные группы из параметра -G, а не заменять им текущее значение;
