@@ -1,0 +1,9 @@
+Если коротко - всегда используй adduser.
+
+useradd - низкоуровневая утилита которая требует кучу дополнительных телодвижений при создании пользователя.
+adduser - по сути скрипт на perl который использует команду useradd в фоне и включает в себя все дополнительные телодвижения.
+
+синтаксис: adduser username
+для того что бы сделать тоже самое с помощью useradd: useradd -d /home/username -m -s/bin/bash -c FullName,Phone,OtherInfo username && passwd username
+
+для добавления пользователя в группу sudo: usermod -a -G sudo username
